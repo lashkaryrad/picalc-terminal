@@ -2,4 +2,5 @@
 
 ## Environment Variables 
 # env="../env/.env"
-api=$( sed "s/#.*//; s/api=*//; s/'//g; s/Key.*.//; /^$/ d" .env ) 
+API_SITE=$( sed "s/#.*//; s/api=*//; s/Key.*.//; s/'//g; /^$/ d" .env ) 
+API_KEY=$( sed "s/#.*//; /https:/ d;s/api....//g; s/'//g; /^$/ d" .env )
