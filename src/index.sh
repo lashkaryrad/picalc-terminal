@@ -7,4 +7,6 @@ API_KEY=$( sed "s/#.*//; /https:/ d;s/api....//g; s/'//g; /^$/ d" $env )
 API=$API_SITE"latest?apikey="$API_KEY
 
 # Dialog
-dialog --backtitle "Forex pip Calculator"  
+dialog --backtitle "Forex pip Calculator" \
+    --title "PIP Calculator" \
+    
